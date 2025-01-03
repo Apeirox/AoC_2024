@@ -26,7 +26,7 @@ binaryModulo = function(binstr, ord = 24){
   binstr %>% stringr::str_sub(start = -ord)
 }
 
-binaryXor <- function(bin1, bin2) {
+binaryXor = function(bin1, bin2) {
   
   if (nchar(bin1) < nchar(bin2)){ bin1 = paste0(paste0(rep(0, nchar(bin2)-nchar(bin1)), collapse = ""), bin1)
   } else {
